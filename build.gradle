@@ -40,7 +40,11 @@ android {
             res.srcDirs = ['res']
             assets.srcDirs = ['assets']
         }
-
+    }
+    packagingOptions {
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
     }
 }
 
